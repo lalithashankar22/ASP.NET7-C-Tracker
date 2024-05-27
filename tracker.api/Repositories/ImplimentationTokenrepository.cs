@@ -34,7 +34,7 @@ namespace tracker.api.Repositories
                 config["jwt:audience"],
                 claims,
                 DateTime.Now,
-                DateTime.Now.AddMinutes(120), //validity of the token 
+                DateTime.Now.AddMinutes(120), //validity of the token testt 
                 signingCredentials: credentials
                 );
             return new JwtSecurityTokenHandler().WriteToken(token);
