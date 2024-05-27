@@ -1,0 +1,32 @@
+2024-05-24 12:26:40.182 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7011/api/Project - -
+2024-05-24 12:26:40.295 +05:30 [INF] Executing endpoint 'tracker.api.Controllers.ProjectController.getallproject (tracker.api)'
+2024-05-24 12:26:40.301 +05:30 [INF] Route matched with {action = "getallproject", controller = "Project"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] getallproject() on controller tracker.api.Controllers.ProjectController (tracker.api).
+2024-05-24 12:26:40.557 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[prod_id], [p].[Department_id], [p].[archv_flag], [p].[end_dt], [p].[prod_name], [p].[start_dt]
+FROM [product] AS [p]
+2024-05-24 12:26:40.583 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[tracker.api.Model.domain.Product, tracker.api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-24 12:26:40.609 +05:30 [INF] Executed action tracker.api.Controllers.ProjectController.getallproject (tracker.api) in 293.6231ms
+2024-05-24 12:26:40.613 +05:30 [INF] Executed endpoint 'tracker.api.Controllers.ProjectController.getallproject (tracker.api)'
+2024-05-24 12:26:40.614 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7011/api/Project - - - 200 - application/json;+charset=utf-8 431.9051ms
+2024-05-24 12:26:57.195 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7011/api/Project/1003 - -
+2024-05-24 12:26:57.199 +05:30 [INF] Executing endpoint 'tracker.api.Controllers.ProjectController.getprojectbydept (tracker.api)'
+2024-05-24 12:26:57.204 +05:30 [INF] Route matched with {action = "getprojectbydept", controller = "Project"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] getprojectbydept(Int32) on controller tracker.api.Controllers.ProjectController (tracker.api).
+2024-05-24 12:26:57.233 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[prod_id], [p].[Department_id], [p].[archv_flag], [p].[end_dt], [p].[prod_name], [p].[start_dt]
+FROM [product] AS [p]
+WHERE [p].[prod_id] = @__p_0
+2024-05-24 12:26:57.237 +05:30 [INF] Executing OkObjectResult, writing value of type 'tracker.api.Model.domain.Product'.
+2024-05-24 12:26:57.241 +05:30 [INF] Executed action tracker.api.Controllers.ProjectController.getprojectbydept (tracker.api) in 32.879ms
+2024-05-24 12:26:57.244 +05:30 [INF] Executed endpoint 'tracker.api.Controllers.ProjectController.getprojectbydept (tracker.api)'
+2024-05-24 12:26:57.245 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7011/api/Project/1003 - - - 200 - application/json;+charset=utf-8 49.6481ms
+2024-05-24 12:26:58.362 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7011/api/Project/1003 - -
+2024-05-24 12:26:58.364 +05:30 [INF] Executing endpoint 'tracker.api.Controllers.ProjectController.getprojectbydept (tracker.api)'
+2024-05-24 12:26:58.366 +05:30 [INF] Route matched with {action = "getprojectbydept", controller = "Project"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] getprojectbydept(Int32) on controller tracker.api.Controllers.ProjectController (tracker.api).
+2024-05-24 12:26:58.379 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[prod_id], [p].[Department_id], [p].[archv_flag], [p].[end_dt], [p].[prod_name], [p].[start_dt]
+FROM [product] AS [p]
+WHERE [p].[prod_id] = @__p_0
+2024-05-24 12:26:58.381 +05:30 [INF] Executing OkObjectResult, writing value of type 'tracker.api.Model.domain.Product'.
+2024-05-24 12:26:58.382 +05:30 [INF] Executed action tracker.api.Controllers.ProjectController.getprojectbydept (tracker.api) in 14.4212ms
+2024-05-24 12:26:58.384 +05:30 [INF] Executed endpoint 'tracker.api.Controllers.ProjectController.getprojectbydept (tracker.api)'
+2024-05-24 12:26:58.385 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7011/api/Project/1003 - - - 200 - application/json;+charset=utf-8 22.6991ms

@@ -1,0 +1,52 @@
+2024-05-24 12:24:09.022 +05:30 [INF] User profile is available. Using 'C:\Users\ls56\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-24 12:24:09.267 +05:30 [INF] Now listening on: https://localhost:7011
+2024-05-24 12:24:09.268 +05:30 [INF] Now listening on: http://localhost:5091
+2024-05-24 12:24:09.281 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-24 12:24:09.283 +05:30 [INF] Hosting environment: Development
+2024-05-24 12:24:09.284 +05:30 [INF] Content root path: C:\lalitha\API_C#\tracker\tracker.api
+2024-05-24 12:24:10.076 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7011/swagger/index.html - -
+2024-05-24 12:24:10.405 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7011/swagger/index.html - - - 200 - text/html;charset=utf-8 333.9209ms
+2024-05-24 12:24:10.409 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - -
+2024-05-24 12:24:10.420 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - -
+2024-05-24 12:24:10.421 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 12.5032ms
+2024-05-24 12:24:10.464 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 43.8993ms
+2024-05-24 12:24:10.571 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7011/swagger/v1/swagger.json - -
+2024-05-24 12:24:10.801 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7011/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 229.8761ms
+2024-05-24 12:24:34.308 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7011/api/Auth/login application/json 62
+2024-05-24 12:24:34.423 +05:30 [INF] Executing endpoint 'tracker.api.Controllers.Authcontroller.login (tracker.api)'
+2024-05-24 12:24:34.471 +05:30 [INF] Route matched with {action = "login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] login(tracker.api.Model.DataTransferObj.AuthDTOs.LoginRequestDTO) on controller tracker.api.Controllers.Authcontroller (tracker.api).
+2024-05-24 12:24:36.411 +05:30 [INF] Executed DbCommand (69ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-05-24 12:24:36.459 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-05-24 12:24:36.466 +05:30 [INF] Executed action tracker.api.Controllers.Authcontroller.login (tracker.api) in 1987.538ms
+2024-05-24 12:24:36.469 +05:30 [INF] Executed endpoint 'tracker.api.Controllers.Authcontroller.login (tracker.api)'
+2024-05-24 12:24:36.480 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7011/api/Auth/login application/json 62 - 400 - text/plain;+charset=utf-8 2172.3104ms
+2024-05-24 12:24:46.098 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7011/api/Auth/login application/json 63
+2024-05-24 12:24:46.105 +05:30 [INF] Executing endpoint 'tracker.api.Controllers.Authcontroller.login (tracker.api)'
+2024-05-24 12:24:46.106 +05:30 [INF] Route matched with {action = "login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] login(tracker.api.Model.DataTransferObj.AuthDTOs.LoginRequestDTO) on controller tracker.api.Controllers.Authcontroller (tracker.api).
+2024-05-24 12:24:46.185 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-05-24 12:24:46.430 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-05-24 12:24:46.431 +05:30 [INF] Executed action tracker.api.Controllers.Authcontroller.login (tracker.api) in 323.0445ms
+2024-05-24 12:24:46.433 +05:30 [INF] Executed endpoint 'tracker.api.Controllers.Authcontroller.login (tracker.api)'
+2024-05-24 12:24:46.435 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7011/api/Auth/login application/json 63 - 400 - text/plain;+charset=utf-8 336.3038ms
+2024-05-24 12:24:53.585 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7011/api/Auth/login application/json 64
+2024-05-24 12:24:53.589 +05:30 [INF] Executing endpoint 'tracker.api.Controllers.Authcontroller.login (tracker.api)'
+2024-05-24 12:24:53.591 +05:30 [INF] Route matched with {action = "login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] login(tracker.api.Model.DataTransferObj.AuthDTOs.LoginRequestDTO) on controller tracker.api.Controllers.Authcontroller (tracker.api).
+2024-05-24 12:24:53.627 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-05-24 12:24:53.827 +05:30 [INF] Executed DbCommand (31ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-05-24 12:24:53.904 +05:30 [INF] Executing OkObjectResult, writing value of type 'tracker.api.Model.DataTransferObj.AuthDTOs.LoginResponseDTO'.
+2024-05-24 12:24:53.913 +05:30 [INF] Executed action tracker.api.Controllers.Authcontroller.login (tracker.api) in 318.3281ms
+2024-05-24 12:24:53.914 +05:30 [INF] Executed endpoint 'tracker.api.Controllers.Authcontroller.login (tracker.api)'
+2024-05-24 12:24:53.916 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7011/api/Auth/login application/json 64 - 200 - application/json;+charset=utf-8 330.2639ms

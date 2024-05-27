@@ -1,0 +1,19 @@
+2024-05-24 15:46:36.284 +05:30 [INF] User profile is available. Using 'C:\Users\ls56\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-24 15:46:36.593 +05:30 [INF] Now listening on: https://localhost:7011
+2024-05-24 15:46:36.598 +05:30 [INF] Now listening on: http://localhost:5091
+2024-05-24 15:46:36.618 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-24 15:46:36.620 +05:30 [INF] Hosting environment: Development
+2024-05-24 15:46:36.622 +05:30 [INF] Content root path: C:\lalitha\API_C#\tracker\tracker.api
+2024-05-24 15:46:37.672 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7011/swagger/index.html - -
+2024-05-24 15:46:38.396 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - -
+2024-05-24 15:46:38.397 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7011/swagger/index.html - - - 200 - text/html;charset=utf-8 729.9596ms
+2024-05-24 15:46:38.435 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 38.1523ms
+2024-05-24 15:46:38.463 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - -
+2024-05-24 15:46:38.547 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 83.9607ms
+2024-05-24 15:46:38.713 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7011/swagger/v1/swagger.json - -
+2024-05-24 15:46:39.046 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7011/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 333.5135ms
+2024-05-24 15:46:46.663 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7011/api/Department - -
+2024-05-24 15:46:46.911 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Reader|Writer)
+2024-05-24 15:46:46.928 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2024-05-24 15:46:46.951 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7011/api/Department - - - 401 0 - 287.8816ms

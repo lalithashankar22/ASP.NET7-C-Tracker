@@ -1,0 +1,31 @@
+﻿@model Tracker.web.Models.DTO.DepartmentDTO
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1> Update Department @ViewBag.department_id </h1>
+@if(Model is not null)
+{
+<h1> Edit Departments</h1>
+<form class="form-inline" method="post">
+    <div class="form-group">
+        <label>department name:</label>
+        <input type="text" class="form-control" asp-for="dept_id" readonly>
+    </div>
+    <div class="form-group">
+        <label>active Y/N:</label>
+        <input type="text" class="form-control" asp-for="dept_name">
+    </div>
+    <div class="form-group">
+        <label>active Y/N:</label>
+        <input type="text" class="form-control" asp-for="archv_flag">
+    </div>
+    <br>
+        <br>
+    <div class="justify-content-between">
+        <button type="submit" class="btn btn-primary " >Submit</button>
+            <button type="submit" class="btn btn-danger " asp-controller="DepartmentView" asp-action="delete">delete</button>
+     </div>
+</form>
+}

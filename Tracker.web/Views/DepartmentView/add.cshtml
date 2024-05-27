@@ -1,0 +1,18 @@
+﻿@model Tracker.web.Models.AddDepartmentModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1> Add Departments</h1>
+<form class="form-inline" method="post">
+    <div class="form-group">
+        <label>department name:</label>
+        <input type="text" class="form-control" asp-for="dept_name">
+    </div>
+    <div class="form-group">
+        <label>active Y/N:</label>
+        <input type="text" class="form-control" asp-for="archv_flag">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

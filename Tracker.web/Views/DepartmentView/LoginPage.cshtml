@@ -1,0 +1,31 @@
+﻿@model Tracker.web.Models.return1
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>
+    Login
+</h1>
+
+<form class="form-inline" method="post">
+    <div class="form-group">
+        <label>User name : </label>
+        <input type="text" class="form-control" asp-for="userid">
+    </div>
+    <div class="form-group">
+        <label>aPassword :</label>
+        <input type="text" class="form-control" asp-for="password">
+    </div>
+    <br>
+    <br>
+    <div class="justify-content-between">
+        <button type="submit" class="btn btn-primary ">Submit</button>
+    </div>
+    <br>
+    <br>
+    <div class="form-group">
+        <label>JWT :</label>
+        <input type="text" class="form-control" asp-for="jwt">
+    </div>
+</form>

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "0m3vZ1SbDdWwg9QEjb2gn+MCOVXVVEa0QxqKXyuMQKE=",
+  "Source": "tracker.api",
+  "BasePath": "_content/tracker.api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,5 @@
+2024-05-24 16:08:05.131 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7011/api/Department - -
+2024-05-24 16:08:05.142 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Reader|Writer)
+2024-05-24 16:08:05.149 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2024-05-24 16:08:05.155 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7011/api/Department - - - 401 0 - 23.7433ms

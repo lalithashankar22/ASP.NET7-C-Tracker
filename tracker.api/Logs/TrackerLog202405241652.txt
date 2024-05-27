@@ -1,0 +1,21 @@
+2024-05-24 16:52:29.538 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7011/api/Department - -
+2024-05-24 16:52:29.558 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Reader|Writer)
+2024-05-24 16:52:29.560 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2024-05-24 16:52:29.562 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7011/api/Department - - - 401 0 - 23.7737ms
+2024-05-24 16:52:33.898 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7011/api/Auth/login application/json 67
+2024-05-24 16:52:33.900 +05:30 [INF] Executing endpoint 'tracker.api.Controllers.Authcontroller.login (tracker.api)'
+2024-05-24 16:52:33.902 +05:30 [INF] Route matched with {action = "login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] login(tracker.api.Model.DataTransferObj.AuthDTOs.LoginRequestDTO) on controller tracker.api.Controllers.Authcontroller (tracker.api).
+2024-05-24 16:52:33.941 +05:30 [INF] Executed DbCommand (31ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-05-24 16:52:34.241 +05:30 [INF] Executed DbCommand (65ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-05-24 16:52:34.252 +05:30 [INF] Executing OkObjectResult, writing value of type 'tracker.api.Model.DataTransferObj.AuthDTOs.LoginResponseDTO'.
+2024-05-24 16:52:34.258 +05:30 [INF] Executed action tracker.api.Controllers.Authcontroller.login (tracker.api) in 350.5211ms
+2024-05-24 16:52:34.262 +05:30 [INF] Executed endpoint 'tracker.api.Controllers.Authcontroller.login (tracker.api)'
+2024-05-24 16:52:34.268 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7011/api/Auth/login application/json 67 - 200 - application/json;+charset=utf-8 369.1150ms

@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Tracker.web.Models.DTO.DepartmentDTO>
+@{
+}
+<h1> Departments</h1>
+@*@if(ViewBag.Response is not null)
+{
+    <p> @ViewBag.Response</p>
+}
+*@
+
+<div class ="d-flex justify-content-end">
+    <a class="btn btn-secondary" asp-controller="DepartmentView" asp-action="add">Create new department</a>
+</div>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Active</th>
+            <th> Update </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var dept in Model)
+        {
+            <tr>
+                <td>@dept.dept_id</td>
+                <td>@dept.dept_name</td>
+                <td>@dept.archv_flag</td>
+                <td>
+                    <a class="btn btn-light" asp-controller="DepartmentView" asp-action="Edit" asp-route-id="@dept.dept_id">Edit</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

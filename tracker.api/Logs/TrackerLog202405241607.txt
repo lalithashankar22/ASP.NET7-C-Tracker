@@ -1,0 +1,29 @@
+2024-05-24 16:07:12.014 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7011/api/Department - -
+2024-05-24 16:07:12.021 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Reader|Writer)
+2024-05-24 16:07:12.024 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2024-05-24 16:07:12.027 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7011/api/Department - - - 401 0 - 12.7477ms
+2024-05-24 16:07:12.471 +05:30 [INF] Executed DbCommand (98ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-05-24 16:07:12.471 +05:30 [INF] Executed DbCommand (66ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-05-24 16:07:12.530 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-05-24 16:07:12.530 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-05-24 16:07:12.537 +05:30 [INF] Executed action tracker.api.Controllers.Authcontroller.login (tracker.api) in 104467.5648ms
+2024-05-24 16:07:12.537 +05:30 [INF] Executed action tracker.api.Controllers.Authcontroller.login (tracker.api) in 116615.1778ms
+2024-05-24 16:07:12.540 +05:30 [INF] Executed endpoint 'tracker.api.Controllers.Authcontroller.login (tracker.api)'
+2024-05-24 16:07:12.540 +05:30 [INF] Executed endpoint 'tracker.api.Controllers.Authcontroller.login (tracker.api)'
+2024-05-24 16:07:12.552 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7011/api/Auth/login application/json;+charset=utf-8 53 - 400 - text/plain;+charset=utf-8 104503.0532ms
+2024-05-24 16:07:12.552 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7011/api/Auth/login application/json;+charset=utf-8 53 - 400 - text/plain;+charset=utf-8 116736.7210ms
+2024-05-24 16:07:12.767 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7011/swagger/index.html - -
+2024-05-24 16:07:12.789 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7011/swagger/index.html - - - 200 - text/html;charset=utf-8 21.9117ms
+2024-05-24 16:07:12.812 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - -
+2024-05-24 16:07:12.813 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - -
+2024-05-24 16:07:12.822 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 8.5538ms
+2024-05-24 16:07:12.919 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 107.3020ms
+2024-05-24 16:07:13.066 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7011/swagger/v1/swagger.json - -
+2024-05-24 16:07:13.094 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7011/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 27.7215ms
